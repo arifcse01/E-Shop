@@ -5,7 +5,7 @@ const CheckOut = () => {
     const {id} = useParams();
     const[product, setProduct] = useState({});
     useEffect(()=>{
-        fetch(`http://localhost:4000/product/${id}`)
+        fetch(`https://rocky-savannah-54019.herokuapp.com/product/${id}`)
         .then(res => res.json())
         .then(data => {
             setProduct(data)

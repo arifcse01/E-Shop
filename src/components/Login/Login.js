@@ -19,7 +19,7 @@ const Login = () => {
         isLoggedIn: false
     });
     const style = {
-        width: "100 %",
+        width: "300px",
         border: "1px solid #f8793f",
         borderRadius: "20px",
         background: "white",
@@ -37,7 +37,7 @@ const Login = () => {
     const handleLogin = () => {
         firebase.auth().signInWithPopup(googleProvider)
             .then((result) => {
-                const {displayName, email} = result.user;
+                const { displayName, email } = result.user;
                 const login = {
                     isLoggedIn: true,
                     email: email,
@@ -47,16 +47,18 @@ const Login = () => {
                 setLoggedInUser(login)
                 history.replace(from)
             }).catch((error) => {
-                const errorMessage = error.message;                
+                const errorMessage = error.message;
             });
     }
 
     return (
 
-        <div className="container">            
-                <div className="col-md-6 mt-5">                    
+        <div className="container">
+            <div className="row">
+                <div className="col-md-8 offset-md-4  offset-12 mt-5">
                     <input onClick={handleLogin} style={style} type="button" value="Login With Google" />
-                </div>            
+                </div>
+            </div>
         </div>
     );
 };

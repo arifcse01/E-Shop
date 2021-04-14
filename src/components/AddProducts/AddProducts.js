@@ -17,7 +17,7 @@ const AddProducts = () => {
 
     const handleAddProduct = (e) =>{
         e.preventDefault();
-        fetch('http://localhost:4000/addProduct', {
+        fetch('https://rocky-savannah-54019.herokuapp.com/addProduct', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)
