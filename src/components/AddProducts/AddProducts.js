@@ -46,7 +46,7 @@ const AddProducts = () => {
                             </div>
                             <div>
                                 <label htmlFor="price">Product Price</label>
-                                <input onBlur={handleOnBlur} className="form-control" name="price" type="text" placeholder='Product Name' id="price" />
+                                <input onBlur={handleOnBlur} className="form-control" name="price" type="text" placeholder='Product Price' id="price" />
                             </div>
                             <div>
                                 <label htmlFor="quantity">Product Quantity</label>
@@ -54,7 +54,7 @@ const AddProducts = () => {
                             </div>
                             <div>
                                 <label htmlFor="img">Product Image</label>
-                                <input onBlur={handleOnBlur} className="form-control" name="img" placeholder="Image" type="text"  id="img" />
+                                <input onBlur={handleOnBlur} className="form-control" name="img" placeholder="Upload Image URL" type="text"  id="img" />
                             </div>
                             <br/>
                             <div>
