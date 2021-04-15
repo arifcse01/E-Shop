@@ -7,7 +7,7 @@ const ShowOrder = (props) => {
             <td>{email}</td>
             <td>{name}</td>            
             <td>{quantity}</td>
-            <td>{price}</td>
+            <td>${price}</td>
             <td>{(new Date(orderTime).toDateString('dd/MM/yyy'))}</td>
         </tr>
     );
